@@ -9,8 +9,9 @@
 
 :root {
     --primary-text: #996600;
-	--background-colour: #ffaa77;
-	--accent-colour-1: #ffaa71;
+	--background-colour: beige;
+	--accent-colour-1: #666600;
+	--accent-colour-2: #cc6633;
     --main-padding: 20px;
     --font-stack: 'Segoe UI', Tahoma, sans-serif;
 }
@@ -2035,7 +2036,7 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: var(--accent-colour-1);
+			border-color: var(--accent-colour-2);
 		}
 
 	input[type="text"],
@@ -2424,7 +2425,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-		background-color: var(--accent-colour-1);
+		background-color: var(--accent-colour-2);
 		border-radius: 5px;
 		border: 0;
 		color: #fff;
@@ -2444,7 +2445,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #50c8fc;
+			background-color: var(--accent-colour-1);
 			color: #fff !important;
 		}
 
@@ -2683,7 +2684,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/hedge_2023_2.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;

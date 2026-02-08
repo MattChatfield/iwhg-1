@@ -3237,7 +3237,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 14pt;
 				line-height: 1.35em;
 			}
 
@@ -3320,7 +3320,7 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				width: 100%;
+				width: inherit;
 				display: block;
 			}
 

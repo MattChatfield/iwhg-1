@@ -34,3 +34,7 @@
 #myBtn:hover {
   background-color: var(--accent-colour-1); 
 }
+
+.competition-faq {
+  padding: 0 0 1.5em 0;
+}

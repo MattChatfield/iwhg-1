@@ -1,0 +1,4 @@
+- This is a repo for a static website, hosted on Github Pages. It uses HTML5, and CSS3 and very simple JS.
+- Style: Keep it clean and functional. Prefer "Substance over style."
+- Skill Level: Basic/Intermediate. Explain *why* a function is used if it's complex.  
+- Do not suggest modern JS frameworks unless explicitly asked. PHP is not used in this project. The website is designed to be simple and fast, so avoid adding unnecessary dependencies or complex build processes. Focus on writing clean, semantic HTML and efficient CSS.

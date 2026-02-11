@@ -1,18 +1,16 @@
 :root {
-    --primary-text: #996600;
-	--background-colour: beige;
-	--accent-colour-1: #666600;
-	--accent-colour-2: #cc6633;
-    --main-padding: 20px;
-    --font-stack: 'Segoe UI', Tahoma, sans-serif;
+  --primary-text: #996600;
+  --background-colour: beige;
+  --accent-colour-1: #666600;
+  --accent-colour-2: #cc6633;
+  --main-padding: 20px;
+  --font-stack: "Segoe UI", Tahoma, sans-serif;
 }
 
 #header h1 {
-			padding: 0 0 0 0;
-		
-		}
+  padding: 0 0 0 0;
+}
 
-		
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -32,9 +30,56 @@
 }
 
 #myBtn:hover {
-  background-color: var(--accent-colour-1); 
+  background-color: var(--accent-colour-1);
 }
 
 .competition-faq {
   padding: 0 0 1.5em 0;
+}
+
+/* Responsive image sizing for left-aligned images
+   Keeps images fluid while capping their displayed width.
+   Adjust `max-width` to change display size. */
+.image.left img {
+  width: 100%;
+  max-width: 220px; /* change this value to control displayed size */
+  height: auto;
+  display: block;
+}
+
+/* Modifier classes for per-image sizing */
+.image.left.small img {
+  max-width: 160px;
+}
+.image.left.medium img {
+  max-width: 220px;
+}
+.image.left.large img {
+  max-width: 320px;
+}
+
+/* Right-aligned equivalents */
+.image.right {
+  display: block;
+  float: right;
+  margin: 0 0 2em 2em; /* mirror left: top/right/bottom/left */
+  position: relative;
+  top: 0.25em;
+}
+
+.image.right img {
+  display: block;
+  width: 100%;
+  max-width: 220px; /* change this to control displayed size */
+  height: auto;
+}
+
+.image.right.small img {
+  max-width: 160px;
+}
+.image.right.medium img {
+  max-width: 220px;
+}
+.image.right.large img {
+  max-width: 320px;
 }

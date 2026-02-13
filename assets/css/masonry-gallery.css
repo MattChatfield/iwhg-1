@@ -1,0 +1,60 @@
+/* Gallery Layout */
+.gallery-grid {
+    margin: 0 auto;
+}
+
+/* Responsive Column Widths */
+.gallery-item {
+    width: 31%; /* Roughly 3 columns on desktop */
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.gallery-item .caption {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #444;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+/* Make it clear the image is clickable */
+.gallery-item a {
+    display: block;
+    cursor: zoom-in;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+/* Suble hover effect for better UX */
+.gallery-item a:hover img {
+    transform: scale(1.02);
+}
+
+.gallery-caption {
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 736px) {
+    .gallery-item {
+        width: 48%; /* 2 columns on tablets/mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* 1 column on small phones */
+    }
+}

@@ -37,6 +37,11 @@
   padding: 0 0 1.5em 0;
 }
 
+div.gallery-item a {
+border-bottom: none;
+}
+
+
 /* Responsive image sizing for left-aligned images
    Keeps images fluid while capping their displayed width.
    Adjust `max-width` to change display size. */

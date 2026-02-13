@@ -25,4 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    // 3. Gallery Initialization
+    const grid = document.querySelector('.gallery-grid');
+if (grid) {
+    imagesLoaded(grid, function() {
+        // Initialize Masonry
+        new Masonry(grid, {
+            itemSelector: '.gallery-item',
+            columnWidth: '.gallery-item',
+            percentPosition: true,
+            gutter: 20
+        });
+
+    });
+}
 }); 

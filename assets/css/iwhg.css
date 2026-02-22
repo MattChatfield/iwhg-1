@@ -38,9 +38,8 @@
 }
 
 div.gallery-item a {
-border-bottom: none;
+  border-bottom: none;
 }
-
 
 /* Responsive image sizing for left-aligned images
    Keeps images fluid while capping their displayed width.
@@ -87,4 +86,73 @@ border-bottom: none;
 }
 .image.right.large img {
   max-width: 320px;
+}
+
+/* In-page navigation styles moved from history.html */
+.inpage-nav {
+  margin: 1em 0 1.5em;
+  padding: 0;
+}
+.inpage-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.inpage-nav a {
+  background: #f2f2f2;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+.inpage-nav a:hover {
+  background: #e0e0e0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles for single-image blocks used in history pages
+   - Mobile: image is full-width and stacked
+   - Desktop: image floats (left) and text flows around it
+   Adjust `max-width` and `margin` as needed for layout preferences. */
+.single-image {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 200px; /* cap image width on small screens */
+}
+.single-image a {
+  display: block;
+}
+.single-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.single-image .gallery-caption {
+  margin: 0.4em 0 0;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+}
+
+@media (min-width: 740px) {
+  .single-image {
+    float: left;
+    width: auto; /* allow image to size naturally up to max-width */
+    max-width: 360px;
+    margin: 0 1.5em 1em 0;
+  }
+  .single-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .single-image .gallery-caption {
+    text-align: left;
+    font-size: 0.95rem;
+  }
 }

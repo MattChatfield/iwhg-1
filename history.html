@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/iwhg.css" />
+	<link rel="stylesheet" href="../assets/css/masonry-gallery.css" />
+	<link rel="stylesheet" href="../assets/css/lightbox.css" />
 </head>
 
 <body class="is-preload">
@@ -65,26 +67,75 @@
 							Competition. A separate competition has been run by the <a target="_blank"
 								href="https://www.facebook.com/wightnaturefundcharity">Wight Nature Fund</a> since 2024.
 						</p>
-
-						<h3>Early competitions</h3>
+						<!-- In-page navigation for h3 sections -->
+						<nav class="inpage-nav" aria-label="On-page navigation">
+							<ul>
+								<li><a href="#early-competitions">Early competitions</a></li>
+								<li><a href="#iwhg">The Isle of Wight Hedgerow Group revival</a></li>
+								<li><a href="#past-competitions">Details of past competitions</a></li>
+							</ul>
+						</nav>
+						<h3 id="early-competitions">Early competitions</h3>
 						<p>Years ago, the IW Hedgelaying Competition was run alongside the annual ploughing match. This
 							tradition died out in the 20th century, most likely as the craft of hedgelaying began to
 							wane and hedges were removed from fields across the country - including the Isle of Wight.
 							This made suitable sites harder to find, and there were fewer practitioners of the
 							craft.</p>
+
+						<div class="single-image">
+							<a href="../images/gallery/1992-competition-instructions-lg.jpg" data-lightbox="history"
+							data-title="1992 Competition Instructions" data-alt="1992 Competition Instructions"><img
+								src="../images/gallery/1992-competition-instructions.jpg"
+								alt="1992 Competition Instructions" />
+							<p class="gallery-caption">1992 Competition Instructions</p>
+						</a>
+						</div>
+
+
+						<p>By the 1990s there was interest growing in the craft of hedgelaying amongst
+							conservationists and local communities, perhaps fuelled by the realisation that the last
+							generation of farm workers who had actively practised the skill was fast dying out.</p>
+						<p>There are records showing that the Isle of Wight Council's Countryside Management
+							Service set up at least two competitions in the early 1990s. In October 1991 Ian Rowat
+							ordered stakes and heathers for 'This year's hedgelaying competition' from the Abbot
+							brothers, and mentioned that the site was to be the Fighting Cocks, Arreton.</p>
+						<p>An undated document of similar age shows the rules of the competition back then were
+							not that different to the rules today.</p>
+						<blockquote>The competition will actually start at 10am and 11 yards of hedging will be
+							available to lay within a 5 hour time limit. Obviously to enable positions to be drawn from
+							a hat and stakes and tools to be organised you will need to be on ground at 9.30am.
+							All hedging stakes and heathers will be provided by C.M.S. Different length stakes have been
+							supplied to allow different styles to be adopted. No style will be stipulated. The judges
+							will be looking for well executed cuts on pleachers, the use and positioning of stakes and
+							heathers and the overall finish of the hedge.
+							Positions will be given for the first three places and prizes donated by W Hursts will be as
+							follows:
+							<ul>
+								<li>1st prize £30 gift voucher for Hursts</li>
+								<li>2nd prize £15 gift voucher for Hursts</li>
+								<li>3rd prize £5 gift voucher for Hursts</li>
+							</ul>
+							Winners will expect to stay for the prize giving ceremony which will start at 4pm and to
+							receive a hedge laying cup which will be returned for next years competition.
+						</blockquote>
+
+
+						<h3 id="iwhg">The Isle of Wight Hedgerow Group revival</h3>
 						<p>In the late 1990s a few enthusiasts on the Island decided to stage a hedgelaying competition
-							again, the first for many years. This was held in 1998 at Chapel Furlong Farm, Hulverstone,
+							again. This was held in 1998 at Chapel Furlong Farm, Hulverstone,
 							by kind permission of Mr and Mrs Carder. It was supported by the Isle of Wight Council's
-							Countryside Section, and by FWAG, the Farming and Wildlife Advisory Group. Both of these
+							Countryside Section (the successor body to the Countryside Management Service), and by FWAG,
+							the Farming and Wildlife Advisory Group. Both of these
 							organisations have since wound up, but the hedgelaying competition lives on!</p>
 
 						<p>Since then, the revived competition has been held (mostly) annually at various locations
-							across the
-							Island. </p>
+							across the Island. </p>
 
 
-						<h3>Details of past competitions</h3>
-						<p>This is an incomplete list of competition results and reports. Photos are being added gradually, where we have them. Older competitions have little in our archive, so if you have any results or
+						<h3 id="past-competitions">Details of past competitions</h3>
+						<p>This is an incomplete list of competition results and reports. Photos are being added
+							gradually, where we have them. Older competitions have little in our archive, so if you have
+							any results or
 							information about competitions prior to 2008 we would love to add them to these pages.</p>
 						<ul>
 							<li>(No competition was held in 2025)</li>
@@ -198,6 +249,10 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/iwhg.js"></script>
+
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="../assets/js/lightbox.js"></script>
 </body>
 
 </html>

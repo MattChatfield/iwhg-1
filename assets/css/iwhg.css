@@ -141,10 +141,19 @@ html {
 
 @media (min-width: 740px) {
   .single-image {
-    float: left;
+    float: none;
     width: auto; /* allow image to size naturally up to max-width */
     max-width: 360px;
+    margin: 0 0 1em;
+  }
+  /* Optional float modifiers for larger screens */
+  .single-image.left {
+    float: left;
     margin: 0 1.5em 1em 0;
+  }
+  .single-image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
   }
   .single-image img {
     width: 100%;

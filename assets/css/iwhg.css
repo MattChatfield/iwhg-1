@@ -139,6 +139,17 @@ html {
   text-align: center;
 }
 
+figcaption {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.3em;
+  font-style: italic;
+}
+
+figure{
+  margin: 0 0 1em 0;
+}
+
 @media (min-width: 740px) {
   .single-image {
     float: none;

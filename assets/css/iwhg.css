@@ -181,3 +181,58 @@ figure {
     font-size: 0.95rem;
   }
 }
+
+/* Announcement banner (built by iwhg.js, settings in announcement-config.js)
+   Sits at the top of #page-wrapper. On mobile it appears directly below the
+   theme's fixed title bar, because #page-wrapper already has padding to clear it.
+   Olive background with white text gives about 6:1 contrast (passes WCAG AA). */
+#announcement {
+  background-color: var(--accent-colour-1);
+  color: #fff;
+  text-align: center;
+  padding: 0.75em var(--main-padding);
+}
+
+#announcement p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+#announcement .announcement-link {
+  display: inline-block;
+  margin-left: 0.75em;
+  padding: 0.2em 0.8em;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#announcement .announcement-link:hover,
+#announcement .announcement-link:focus {
+  background-color: #fff;
+  color: var(--accent-colour-1);
+}
+
+/* Preview mode (?announcement=preview): dashed outline so it is obvious this is not live */
+#announcement.is-preview {
+  outline: 3px dashed var(--accent-colour-2);
+  outline-offset: -3px;
+}
+
+@media (max-width: 736px) {
+  #announcement {
+    padding: 0.6em 1em;
+  }
+
+  /* Link drops onto its own line with a comfortable tap target */
+  #announcement .announcement-link {
+    display: block;
+    margin: 0.5em auto 0;
+    padding: 0.5em 1em;
+    max-width: 14em;
+  }
+}

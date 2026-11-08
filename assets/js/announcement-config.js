@@ -19,7 +19,7 @@ const ANNOUNCEMENT = {
   // Format must be YYYY-MM-DD (year-month-day, with leading zeros).
   // Dates are interpreted as UK time (Europe/London).
   start: "2026-11-01",
-  end: "2027-11-15",
+  end: "2026-11-15",
 
   // The text shown in the banner. Plain text only (no HTML).
   message: "Wight Nature Fund’s Autumn Hedgelaying Competition is on 14th November 2026",

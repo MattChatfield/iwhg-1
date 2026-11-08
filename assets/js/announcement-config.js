@@ -18,14 +18,14 @@ const ANNOUNCEMENT = {
   // The banner shows from the start date to the end date, INCLUSIVE of both days.
   // Format must be YYYY-MM-DD (year-month-day, with leading zeros).
   // Dates are interpreted as UK time (Europe/London).
-  start: "2027-01-16",
-  end: "2027-02-27",
+  start: "2026-11-01",
+  end: "2027-11-15",
 
   // The text shown in the banner. Plain text only (no HTML).
-  message: "30th Annual Hedgelaying Competition: Saturday 27 February 2027, 10am to 4pm",
+  message: "Wight Nature Fund’s Autumn Hedgelaying Competition is on 14th November 2026",
 
   // Optional link shown after the message. Set linkText to "" for no link.
   // linkUrl is relative to the site root, so "competition.html" works from any page.
   linkText: "Find out more",
-  linkUrl: "competition.html"
+  linkUrl: "https://wnf.org.uk/wnf-hedgelaying-2026/"
 };
